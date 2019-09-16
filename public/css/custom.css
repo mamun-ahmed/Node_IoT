@@ -1,0 +1,422 @@
+/*==============================================
+  1. Font face
+  ==============================================*/
+@font-face {
+  font-family: 'digital-7-mono';
+  src: url('fonts/digital-7-mono.eot');
+  src: url('fonts/digital-7-mono.ttf') format('embedded-opentype'),
+    url('fonts/digital-7-mono.eot') format('woff'),
+    url('fonts/digital-7-mono.ttf') format('truetype');
+}
+/*==============================================
+  2. Home style
+  ==============================================*/
+.section{position: relative;}
+.CompanyName h1{
+	color:#0e1a35;
+	font-size: 60px;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+.status-on-off-btn{
+  padding-top: 35px;
+  padding-bottom: 100px;
+}
+a.onoff-btn{
+ 	margin: 0px 25px;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 45px;
+    text-transform: capitalize;
+    font-size: 24px;
+    border: 1px solid #0e1a35;
+    background-color: #0e1a35;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+ }
+a.off-btn{
+	color: #0e1a35;
+	background: transparent;
+}
+ a.onoff-btn:hover{
+ 	background: transparent;
+    color: #0e1a35;
+    border: 1px solid #0e1a35;
+    -webkit-transition: .3s;
+    transition: .3s;
+ }
+
+
+ .machine-status-Area {
+ 	overflow: hidden;
+ }
+ .machine-status-Area .sectionwrapper{
+ 	padding: 0 0 40px;
+ }
+ .machine-status h3{
+ 	color:#0e1a35;
+	font-size: 30px;
+	font-weight: 700;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	text-transform: uppercase;
+ }
+
+ a.status-btn{
+ 	margin: 0px 25px;
+    display: inline-block;
+    color: #fff;
+    padding: 5px 45px;
+    text-transform: uppercase;
+    font-size: 24px;
+    border: 3px solid #0195df;
+    background-color: #0e1a35;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+ }
+ a.status-btn:hover{
+ 	background-color: #0096d4;
+ 	border: 3px solid #0e1a35;
+ 	-webkit-transition: .3s;
+    transition: .3s;
+ }
+ a.status-btn .degree{
+ 	font-size: 14px;
+ 	position: relative;
+ 	top: -14px;
+ }
+ .deepbluebg{background: #0e1a35;}
+ .lightbluebg{background: #0195df;}
+ .blackcolor{color: #000;}
+ .copyright{color: #fff;}
+ .fttextblack{color: #000000;}
+ .main-footer .sectionwrapper{
+ 	padding: 30px 0 30px;
+ }
+ .copyright a{
+    text-decoration: none;
+    font-style: italic;
+ }
+ .copyright a:hover{
+    color: #000000;
+ }
+/*==============================================
+  1. Home style end
+  ==============================================*/
+.resistrationFormNuvistaPharma{
+  width: 100%;
+  height:100%;
+  font-family: 'Open Sans', sans-serif;
+  background: rgb(80, 50, 67);
+    background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top, rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg, rgb(129, 127, 112) 0%,rgba(108, 108, 108, 0.37) 100%);
+    background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+    background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg, #05757b 0%,rgba(158, 76, 123, 0.37) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );
+padding-bottom: 50px;
+}
+/* resistrationForm */
+/* Input */
+/* Lists */
+ol,
+ul {
+  list-style: none;
+}
+input,
+textarea,
+button,
+input[type="button"],
+.generalBtn {
+  outline: none !important;
+  box-shadow: none;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+input:focus,
+textarea:focus {
+  color: #fff;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px 9px;
+    margin-bottom: 10px;
+    background: rgba(0,0,0,0.3);
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius: 4px;
+    box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+    -webkit-transition: box-shadow .5s ease;
+    -moz-transition: box-shadow .5s ease;
+    -o-transition: box-shadow .5s ease;
+    -ms-transition: box-shadow .5s ease;
+    transition: box-shadow .5s ease;
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  width: 100%;
+  max-width: 100%;
+  min-height: 132px;
+  position: relative;
+}
+textarea::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #ffffff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+button,
+input[type="button"],
+input[type="submit"] {
+  border: 0px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 13px 20px;
+  background-color: #0195df;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -khtml-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-border-radius: 2px 2px 2px 2px;
+  -moz-border-radius: 2px 2px 2px 2px;
+  -o-border-radius: 2px 2px 2px 2px;
+  -ms-border-radius: 2px 2px 2px 2px;
+  -khtml-border-radius: 2px 2px 2px 2px;
+  border-radius: 2px 2px 2px 2px;
+}
+/* placeholder */
+*::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #0195df;
+}
+*:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #0195df;
+  opacity: 1;
+}
+*::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #0195df;
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #0195df;
+}
+/* select */
+
+.resistrationTitle {
+    font-size: 36px;
+    color: #101c36;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.checkoutFormArea {padding-left: 100px;}
+.resistrationFormNuvistaPharma .formControl label {
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+}
+.loginHere{padding-bottom: 62px;}
+.loginHere h5{
+  font-size: 15px;
+  color: #373737;
+  font-family: 'Lato', sans-serif;
+  line-height: 19px;
+}
+.loginHere h5 a{color: #0195df;text-decoration: underline!important;}
+.CheckAddress{padding:0 30px 0 27px; }
+.formControl input[type="text"], .formControl input[type="password"], 
+.formControl input[type="email"], .formControl input[type="url"], 
+.formControl textarea, .formControl select{
+  width: 100%;
+  color: #bfc1c8;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #b5b5b5;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  background: #0e1a35;
+  font-weight: 400;
+  font-style: italic;
+}
+.resBtn{
+  background: #0195df;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 2px solid #0195df;
+  -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -khtml-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+.resBtn:hover{
+  color: #ffffff;
+  background: #121d37;
+  border: 2px solid #0195df;
+}
+.pdt70{margin-top: 70px;}
+.mrb70{margin-bottom: 70px;}
+/* Home page */
+/* of off btn */
+.pdl50{padding-left: 50px;}
+.onOffbtn {
+  font-size: 24px;
+  display: inline-block;
+  width: 132px;
+  height: 49px;
+  line-height: 46px;
+  text-align: center;
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  overflow: hidden;
+  position: relative;
+  top: 18px;
+  left: 0px;
+}
+.onOffbtn span {
+  background-color: #0195df;
+  border: 3px solid #0d172e;
+  display: block;
+  width: 132px;
+  height: 49px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.onOffbtn .show-btn {
+    left: 225px;
+}
+
+.onOffbtn:hover .show-btn {
+  background-color: #0d172e;
+  border: 3px solid #0195df;
+  left: 0;
+}
+
+.onOffbtn:hover .hide-btn {
+  left: -225px;
+}
+/* end of On-off */
+
+.switch-OnOff h1{
+  font-size: 36px;
+  color: #0e1a35;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.mrb40{margin-bottom: 40px !important;}
+/*==============================================
+  2. Resister Page end
+  ==============================================*/
+
+/* nuvista-pannel */
+.author-Content{margin-bottom: 30px;}
+
+/* 
+**-- Modal style --**
+*/
+.position h3{
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.authornumber h3{
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.author-modal{    background: rgb(80, 50, 67);
+    background: -moz-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%),-moz-linear-gradient(top, rgba(57,173,219,.25) 0%, rgba(42,60,87,.4) 100%), -moz-linear-gradient(-45deg, #670d10 0%, #092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -webkit-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -webkit-linear-gradient(-45deg, rgb(129, 127, 112) 0%,rgba(108, 108, 108, 0.37) 100%);
+    background: -o-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -o-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -o-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+    background: -ms-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), -ms-linear-gradient(top, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), -ms-linear-gradient(-45deg, #670d10 0%,#092756 100%);
+    background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom, rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg, #05757b 0%,rgba(158, 76, 123, 0.37) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3E1D6D', endColorstr='#092756',GradientType=1 );}
+.editbtn {
+  margin-top: 22px;
+}
+.editbtn a{
+  color:#0e1a35;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/* modal */
+.modal-title{
+  color:#fff;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.author-number-form input{
+  width: 100%;
+  margin-bottom: 10px;
+  background: rgba(0,0,0,0.3);
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 13px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+  box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+  -webkit-transition: box-shadow .5s ease;
+  -moz-transition: box-shadow .5s ease;
+  -o-transition: box-shadow .5s ease;
+  -ms-transition: box-shadow .5s ease;
+  transition: box-shadow .5s ease;
+}
+.modal-close a{
+  color:#ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 2px solid;
+}
+
+.lgbtn{
+    margin-top:30px;
+}
+/*==============================================
+  3. Settings Page end
+  ==============================================*/

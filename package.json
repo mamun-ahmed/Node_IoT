@@ -1,0 +1,30 @@
+{
+  "name": "nuvistaserver",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "bcryptjs": "~1.0.2",
+    "body-parser": "~1.15.2",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.14.0",
+    "express-session": "~1.0.0",
+    "express-validator": "*",
+    "handlebars-helpers": "^0.8.0",
+    "hbs": "~4.0.1",
+    "morgan": "~1.7.0",
+    "mysql": "2.12.0",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "serve-favicon": "~2.3.0",
+    "socket.io":"~1.7.3",
+    "mqtt":"~2.5.0",
+    "util":"~0.10.3",
+    "net":"~1.0.2"
+  }
+}

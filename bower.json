@@ -1,0 +1,27 @@
+{
+  "name": "nodeiot",
+  "description": "Server monitoring IoT system using Node.js, Express, MySQL and MQTT protocol",
+  "main": "",
+  "authors": [
+    "Mamun Ahmed"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Node IoT"
+  ],
+  "homepage": "www.civilizedtechnologies.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "socket.io-client": "^1.7.2",
+    "html5shiv": "^3.7.3",
+    "respond": "^1.4.2",
+    "jquery": "^3.2.1"
+  }
+}

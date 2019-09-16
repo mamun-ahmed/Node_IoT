@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Nuvista Private Limited</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--Login Style -->
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="/bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="home">
+<div class="container-fluid display-table">
+    <div class="row display-table-row">
+        <div class="col-md-2 col-sm-1 hidden-xs display-table-cell v-align box" id="navigation">
+            <div class="logo">
+                <a hef="home.html"><img src="/images/logo.png" alt="merkery_logo" class="hidden-xs hidden-sm">
+                    <img src="/images/logo.png" alt="merkery_logo" class="visible-xs visible-sm circle-logo">
+                </a>
+            </div>
+            <div class="navi">
+                <ul>
+                    <li class="active"><a href="#"><i class="fa fa-home" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Home</span></a></li>
+                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Report</span></a></li>
+                    <li><a href="/users/register"><i class="fa fa-calendar" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Users</span></a></li>
+                    <li><a href="/settings"><i class="fa fa-cog" aria-hidden="true"></i><span class="hidden-xs hidden-sm">Setting</span></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-offset-10 lgbtn">
+                <a href="/users/logout" class="btn btn-info btn-lg">
+                    <span class="glyphicon glyphicon-log-out"></span> Logout
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-10 col-sm-11">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="CompanyName">
+                        <h1>Nuvista Private Limited</h1>
+                    </div>
+                    <!-- end of Heading -->
+                </div>
+                <!-- col-md-12 -->
+            </div>
+            <!-- end of row -->
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <canvas id="temp-gauge" class="temp-gauge-meter">
+                    </canvas>
+                </div>
+                <!-- end of col12 -->
+            </div>
+            <!-- end of row -->
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3 text-center">
+                    <div class="switch-OnOff">
+                        <h1>Machine Heading</h1>
+                    </div>
+                    <div class="status-on-off-btn">
+                        <a class="onoff-btn off-btn smoth-scroll mrb40">On</a>
+                        <a class="onoff-btn  smoth-scroll">off</a>
+                    </div><!-- end of onoff-btn -->
+                </div><!-- end of col6 -->
+            </div><!-- end of row -->
+
+            <div class="machine-status-Area section">
+                <div class="sectionwrapper">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3 text-center">
+                            <div class="machine-status">
+                                <h3>Machine Status</h3>
+                                <a id="machine-temp" class="status-btn smoth-scroll" href="#On">0</a>
+                                <a id="machine-switch" href="#" class="onOffbtn"></a>
+                            </div><!-- end of onoff-btn -->
+                        </div><!-- end of col6 -->
+                    </div><!-- end of row -->
+                </div><!-- end of sectionwrapper -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="main-footer section lightbluebg">
+    <div class="sectionwrapper">
+        <div class="bottomFooter clearfix">
+            <div class="container">
+                <!--Copyright-->
+                <div class="copyright text-center">Nuvista pharma <span class="fttextblack">-</span> Copyright © 2017. Designed by <a target="_blank" href="#" class="blackcolor">ThemeOsanLab</a>
+                </div>
+                <!-- end of copyright -->
+            </div>
+            <!-- end of container -->
+        </div>
+        <!-- end of container -->
+    </div>
+    <!-- end of bottomFooter -->
+</footer>
+<!-- end of footer -->
+<!-- Modal -->
+<div id="add_project" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header login-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Add Project</h4>
+            </div>
+            <div class="modal-body">
+                <input type="text" placeholder="Project Title" name="name">
+                <input type="text" placeholder="Post of Post" name="mail">
+                <input type="text" placeholder="Author" name="passsword">
+                <textarea placeholder="Desicrption"></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="cancel" data-dismiss="modal">Close</button>
+                <button type="button" class="add-project" data-dismiss="modal">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/bower_components/socket.io-client/dist/socket.io.js"></script>
+<script type="text/javascript" src="/scripts/gauge.js"></script>
+<script>
+    var tempGauge = new Gauge({
+        renderTo: 'temp-gauge',
+        width: 380,
+        height: 380,
+        glow: true,
+        units: '°C',
+        title: 'Temperature',
+        minValue: -10,
+        maxValue: 50,
+        majorTicks: [-10, 0, 10, 20, 30, 40, 50],
+        minorTicks: 10,
+        strokeTicks: false,
+        highlights: [{
+            from: -10,
+            to: 0,
+            color: 'rgba(0, 0, 255, .3)'
+        }, {
+            from: 0,
+            to: 10,
+            color: 'rgba(0, 0, 255, .1)'
+        }, {
+            from: 30,
+            to: 35,
+            color: 'rgba(255, 255, 0, .3)'
+        }, {
+            from: 35,
+            to: 50,
+            color: 'rgba(255, 0, 0, .3)'
+        }],
+        colors: {
+            plate: '#f5f5f5',
+            majorTicks: '#666',
+            minorTicks: '#888',
+            title: '#444',
+            units: '#000',
+            numbers: '#222',
+            needle: {
+                start: 'rgba(240, 128, 128, 2)',
+                end: 'rgba(255, 160, 122, .9)'
+            }
+        },
+        animation: {
+            duration: 500,
+            fn: 'linear'
+        },
+        valueFormat: {
+            int: 2,
+            dec: 1
+        }
+    });
+
+
+    tempGauge.onready = function() {
+        tempGauge.setValue(25);
+    };
+
+
+    tempGauge.draw();
+
+    $(window).resize(function() {
+        if ($(window).width() < 1200) {
+            tempGauge.updateConfig({
+                width: 300,
+                height: 300
+            });
+        } else {
+            tempGauge.updateConfig({
+                width: 380,
+                height: 380
+            });
+        }
+    });
+
+    var socket  = io.connect('http://www.paxtech.live:4000');
+    socket.on('connect',function () {
+        socket.on('mqtt',function (msg) {
+            console.log(msg.topic+': '+msg.payload);
+            var status      = String(msg.payload);
+            var subStatus   = status.split(":");
+            var tempStatus  = subStatus[0].split("-");
+            var tempC       = typeof tempStatus[1]==="undefined" ? 0 : tempStatus[1];
+            var acStatus    = subStatus[1];
+
+            console.log("Temperature: "+tempC);
+            tempGauge.setValue(tempC);
+            $("#machine-temp").html(tempC+' <small class="degree">0</small>C');
+
+            if(acStatus==="AC-OFF"){
+                $("#machine-switch").html('<span class="hide-btn">Off</span> <span class="show-btn">on</span>');
+            }else if(acStatus==="AC-ON"){
+                $("#machine-switch").html('<span class="show-btn">Off</span> <span class="hide-btn">on</span>');
+            }
+
+        });
+
+        socket.emit('subscribe',{topic:'atmRanger/serverEye/v01/ARSEFFV01/out'});
+    });
+
+    //Initialization
+    $(document).ready(function(){
+        tempGauge.setValue(0);
+        socket.emit('publish',{topic:"atmRanger/serverEye/v01/ARSEFFV01/in",payload:"STATUS"});
+    });
+
+
+</script>
+</body>
+
+</html>
